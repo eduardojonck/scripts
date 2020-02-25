@@ -1,6 +1,7 @@
 #!/bin/bash
 ### Script de integração do OpenMediaVault ao Active Directory Microsoft ou SAMBA 4 ####
 #Autor: Eduardo Jonck
+#Email: eduardo@eduardojonck.com
 #Data: 24/02/2020
 #Versão: 1.0
 
