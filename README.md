@@ -1,2 +1,2 @@
-# Scripts, tutoriais, etc
-Repositório para armazenamento de scripts, tutoriais e outras anotações diversas do dia a dia.
+# Scripts para Linux e Windows
+Repositório para armazenamento de scripts Linux e Windows utilizados no dia a dia.
