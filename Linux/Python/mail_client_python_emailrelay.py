@@ -1,3 +1,6 @@
+#Script para envio de emails isando um servidor sem TLS como por exemplo EmailRelay.
+
+#encoding: utf-8
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
