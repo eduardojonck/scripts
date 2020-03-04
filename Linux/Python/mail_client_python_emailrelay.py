@@ -1,4 +1,4 @@
-#Script para envio de emails isando um servidor sem TLS como por exemplo EmailRelay.
+#Script para envio de emails usando um servidor sem TLS como por exemplo EmailRelay. Copiar as linhas abaixo.
 
 #encoding: utf-8
 import smtplib
