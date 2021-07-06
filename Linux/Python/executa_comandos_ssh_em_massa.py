@@ -5,7 +5,7 @@ import pxssh
 import sys
 import getpass
 
-
+#Variaveis de entrada
 if sys.version_info.major == 2:
     username = raw_input('Insira seu usuário SSH: ') 
     password = getpass.getpass('Insira sua senha SSH: ')
@@ -14,7 +14,8 @@ elif sys.version_info.major == 3:
     username = input('Insira seu usuário SSH:') 
     password = getpass.getpass('Insira sua senha SSH:')
     command = input('Insira o comando a ser executado nos servidores remotos:')
-        
+    
+#Abre o arquivo que contem a lista de servidores a ser executado os comandos        
 with open('/srv/scripts/labs/lista_servidores.txt', 'r') as servidores:
     for servidor in servidores:
         try:
