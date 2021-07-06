@@ -7,12 +7,12 @@ import getpass
 
 
 if sys.version_info.major == 2:
-    username = raw_input('Insira seu usuário SSH:') 
-    password = getpass.getpass('Insira sua senha SSH:')
-    command = raw_input('Insira o comando a ser executado nos servidores remotos:')
-elif sys.version_info.major == 3:
-    username = input('Insira seu usuário SSH: ') 
+    username = raw_input('Insira seu usuário SSH: ') 
     password = getpass.getpass('Insira sua senha SSH: ')
+    command = raw_input('Insira o comando a ser executado nos servidores remotos: ')
+elif sys.version_info.major == 3:
+    username = input('Insira seu usuário SSH:') 
+    password = getpass.getpass('Insira sua senha SSH:')
     command = input('Insira o comando a ser executado nos servidores remotos:')
         
 with open('/srv/scripts/labs/lista_servidores.txt', 'r') as servidores:
