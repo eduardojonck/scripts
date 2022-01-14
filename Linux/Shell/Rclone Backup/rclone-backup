@@ -1,0 +1,167 @@
+#!/bin/bash
+##########################################
+#### Script de Backup para RClone     ####
+#### Autor: Eduardo Jonck             ####
+#### E-mail: eduardo@eduardojonck.com ####
+#### Versão: 1.0                      ####
+#### Data criação: 13/01/2022         ####
+#### Data de atualização: 13/01/2022  ####
+##########################################
+
+
+#Função de Help
+print_help() {
+  echo
+  echo "Utilize: backup-rclone.sh -c job.conf"
+  echo
+  exit 0
+              }
+
+#Cria a pasta de armazenamento dos logs
+if [ ! -d $LOG_DIR ];then
+ mkdir -p $LOG_DIR
+fi
+
+
+#Função para iniciar o backup
+startbackup(){
+
+#Carrega arquivo de configuração do job de backup
+. "$CONF_JOB"
+
+#Limpa logs de acordo com a retenção
+find $LOG_DIR -type f -mtime +$LOGROTATE -delete
+
+# Verifica se existe o diretorio de Origem
+echo
+echo "Checando acesso a origem $ORIGEM ...."
+rclone lsd "$ORIGEM" &> /dev/null
+	
+	if [ $? -eq 0 ]; then
+		echo
+		echo -e "\e[00;32mOK\e[00m = $ORIGEM esta acessivel!"
+		ORIGEM_ACESS=OK
+	else
+		echo "ERRO = $ORIGEM esta inacessivel em $DATA!" > $LOG_FILE
+	fi
+	
+echo
+
+# Verifica se existe o diretorio de Destino
+echo "Checando acesso ao destino $DESTINO ...."
+rclone lsd "$DESTINO" &>/dev/null
+	
+	if [ $? -eq 0 ]; then
+        echo
+		echo -e "\e[00;32mOK\e[00m = $DESTINO esta acessivel!"
+		DESTINO_ACESS=OK
+	else
+		echo -e "\e[00;31mERRO\e[00m = $DESTINO esta inacessivel!"
+		echo "ERRO = $DESTINO esta inacessivel em $DATA!" >> $LOG_FILE
+	fi	
+
+
+
+#Checa se a origem e Destino estão com acesso e inicia o backup
+if [ "$ORIGEM_ACESS" = "OK" -a "$DESTINO_ACESS" = "OK" ]; then
+	echo
+	echo "Backup em execucao! Mantenha-se logado e acompanhe o status em [$LOG_FILE]"
+	rclone copy "$ORIGEM" "$DESTINO" --create-empty-src-dirs --drive-acknowledge-abuse --log-file="$LOG_FILE" --log-level $LOG_LEVEL
+	JOB_STATUS=$?
+
+	if [ $JOB_STATUS -eq 0 ]; then
+		STATUS="[SUCESSO]"
+		#Envia email se o backup executou com sucesso
+		sendmail
+		echo
+		echo "Backup da origem $ORIGEM e destino $DESTINO realizado com sucesso em `date "+%d/%m/%Y as %H:%M:%S"`!"
+		echo "Backup da origem $ORIGEM e destino $DESTINO realizado com sucesso em `date "+%d/%m/%Y as %H:%M:%S"`!" >> "$LOG_FILE"
+		echo
+	else
+	
+		STATUS="[ERRO]"
+		echo "Erro na execucao do backup em $DATA! Verifique o arquivo de log $LOG_FILE!"
+		echo "Erro na execucao do backup em $DATA!" >> "$LOG_FILE"
+		#Envia email se deu erro no backup
+		sendmail
+	
+	fi
+
+else
+
+
+	#Envia email se deu erro no backup
+	STATUS="[ERRO]"
+	sendmail
+fi
+
+	}
+	
+
+#Função em Python para enviar email de Backup
+sendmail(){
+python - << EOF
+
+#encoding: utf-8
+import smtplib, ssl
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
+from email.MIMEBase import MIMEBase
+from email import encoders
+ 
+fromaddr = "$ENVIA_EMAIL"
+toaddr = "$RECEBE_EMAIL"
+ 
+msg = MIMEMultipart()
+ 
+msg['From'] = fromaddr
+msg['To'] = toaddr
+msg['Subject'] = "$STATUS $SUBJECT"
+ 
+body = "$BODY"
+ 
+msg.attach(MIMEText(body, 'plain'))
+ 
+filename = "${NAME_BACKUP}.log"
+attachment = open("$LOG_FILE", "rb")
+ 
+part = MIMEBase('application', 'octet-stream')
+part.set_payload((attachment).read())
+encoders.encode_base64(part)
+part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+ 
+msg.attach(part)
+ 
+server = smtplib.SMTP('$SERVER', $PORTA)
+server.starttls()
+text = msg.as_string()
+server.login(fromaddr, "$SENHA")
+server.sendmail(fromaddr, toaddr, text)
+server.quit()
+EOF
+
+
+}
+
+#Case das escolhas possíveis
+case "$1" in
+         --help)
+         	print_help
+	 	exit 0;
+	 ;;
+         -h)
+	         print_help
+        	 exit 0;
+         ;;
+		 -c)	
+        CONF_JOB="$2"
+		export CONF_JOB
+		startbackup
+        exit 0;
+         ;;
+
+         *)
+        	 print_help
+         	 exit 0
+         ;;
+esac
