@@ -3,9 +3,9 @@
 #### Script de Backup para RClone     ####
 #### Autor: Eduardo Jonck             ####
 #### E-mail: eduardo@eduardojonck.com ####
-#### Versão: 1.0                      ####
+#### Versão: 1.1                      ####
 #### Data criação: 13/01/2022         ####
-#### Data de atualização: 13/01/2022  ####
+#### Data de atualização: 25/01/2022  ####
 ##########################################
 
 
@@ -42,7 +42,7 @@ rclone lsd "$ORIGEM" &> /dev/null
 		echo -e "\e[00;32mOK\e[00m = $ORIGEM esta acessivel!"
 		ORIGEM_ACESS=OK
 	else
-		echo "ERRO = $ORIGEM esta inacessivel em $DATA!" > $LOG_FILE
+		echo "ERRO = $ORIGEM esta inacessivel em $DATA!" > "$LOG_FILE"
 	fi
 	
 echo
@@ -57,7 +57,7 @@ rclone lsd "$DESTINO" &>/dev/null
 		DESTINO_ACESS=OK
 	else
 		echo -e "\e[00;31mERRO\e[00m = $DESTINO esta inacessivel!"
-		echo "ERRO = $DESTINO esta inacessivel em $DATA!" >> $LOG_FILE
+		echo "ERRO = $DESTINO esta inacessivel em $DATA!" >> "$LOG_FILE"
 	fi	
 
 
