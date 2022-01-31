@@ -3,24 +3,20 @@
 #### Script de Backup para RClone     ####
 #### Autor: Eduardo Jonck             ####
 #### E-mail: eduardo@eduardojonck.com ####
-#### Versão: 1.1                      ####
+#### Versão: 1.2                      ####
 #### Data criação: 13/01/2022         ####
-#### Data de atualização: 25/01/2022  ####
+#### Data de atualização: 30/01/2022  ####
 ##########################################
+
 
 
 #Função de Help
 print_help() {
   echo
-  echo "Utilize: backup-rclone.sh -c job.conf"
+  echo "Utilize: rclone-backup -c job.conf"
   echo
   exit 0
               }
-
-#Cria a pasta de armazenamento dos logs
-if [ ! -d $LOG_DIR ];then
- mkdir -p $LOG_DIR
-fi
 
 
 #Função para iniciar o backup
@@ -28,6 +24,11 @@ startbackup(){
 
 #Carrega arquivo de configuração do job de backup
 . "$CONF_JOB"
+
+#Cria a pasta de armazenamento dos logs
+if [ ! -d $LOG_DIR ];then
+ mkdir -p $LOG_DIR
+fi
 
 #Limpa logs de acordo com a retenção
 find $LOG_DIR -type f -mtime +$LOGROTATE -delete
@@ -95,6 +96,7 @@ else
 	sendmail
 fi
 
+
 	}
 	
 
@@ -140,8 +142,8 @@ server.sendmail(fromaddr, toaddr, text)
 server.quit()
 EOF
 
-
 }
+
 
 #Case das escolhas possíveis
 case "$1" in
