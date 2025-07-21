@@ -56,7 +56,7 @@ systemctl restart ssh &>/dev/null
 
 #install  packages required
 add-apt-repository --yes ppa:ondrej/php &>/dev/null
-echo "deb [trusted=yes] http://archive.ubuntu.com/ubuntu bionic main universe" | sudo tee /etc/apt/sources.list.d/pnetlab.list
+echo "deb [trusted=yes] http://archive.ubuntu.com/ubuntu bionic main universe" | sudo tee /etc/apt/sources.list.d/pnetlab.list  &>/dev/null
 apt-get update
 
 
