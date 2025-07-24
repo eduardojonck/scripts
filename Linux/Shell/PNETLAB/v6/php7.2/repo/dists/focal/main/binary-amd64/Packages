@@ -1,0 +1,1095 @@
+Package: apache2-bin
+Source: apache2
+Version: 2.4.41-4ubuntu3.23
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 4930
+Depends: perl:any, libapr1 (>= 1.6.2), libaprutil1 (>= 1.6.0), libaprutil1-dbd-sqlite3 | libaprutil1-dbd-mysql | libaprutil1-dbd-odbc | libaprutil1-dbd-pgsql | libaprutil1-dbd-freetds, libaprutil1-ldap, libbrotli1 (>= 0.6.0), libc6 (>= 2.14), libcrypt1 (>= 1:4.1.0), libcurl4 (>= 7.16.2), libjansson4 (>= 2.4), libldap-2.4-2 (>= 2.4.7), liblua5.2-0, libnghttp2-14 (>= 1.20.0), libpcre3, libssl1.1 (>= 1.1.1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Suggests: apache2-doc, apache2-suexec-pristine | apache2-suexec-custom, www-browser
+Breaks: gridsite (<< 3.0.0~20170225gitd51b2fd-1~), libapache2-mod-dacs (<= 1.4.38a-2), libapache2-mod-proxy-uwsgi (<< 2.4.33)
+Replaces: libapache2-mod-proxy-uwsgi (<< 2.4.33)
+Provides: apache2-api-20120211, apache2-api-20120211-openssl1.1
+Filename: repo/pool/main/apache2-bin_2.4.41-4ubuntu3.23_amd64.deb
+Size: 1188104
+MD5sum: 489a5ebfea3fff37d82d4d9167de3450
+SHA1: 666ca1efdf6143acecb7cc159f98610d7b21d58d
+SHA256: 889c37f1f40d93536d2cc80db08d161f94d46dce9007bce080449d87ac023268
+Section: httpd
+Priority: optional
+Homepage: https://httpd.apache.org/
+Description: Apache HTTP Server (modules and other binary files)
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the binaries only and does not set up a working
+ web-server instance. Install the "apache2" package to get a fully working
+ instance.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: fontconfig-config
+Source: fontconfig
+Version: 2.13.1-2ubuntu3
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 170
+Depends: ucf (>= 0.29), fonts-dejavu-core | ttf-bitstream-vera | fonts-liberation | fonts-freefont
+Breaks: libfontconfig1 (<< 2.13.0)
+Filename: repo/pool/main/fontconfig-config_2.13.1-2ubuntu3_all.deb
+Size: 28780
+MD5sum: 962b743a3bbf95b70d8e439c97445c1b
+SHA1: 2af3ea0768e326d1b81cd78aef2ebfdc5a7402eb
+SHA256: 80b090925c52aff3f4681b361c9823b041c42c57cca58b5baf2541bafc25fed9
+Section: fonts
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+Original-Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+
+Package: fonts-dejavu-core
+Source: fonts-dejavu
+Version: 2.37-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2954
+Breaks: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Replaces: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Filename: repo/pool/main/fonts-dejavu-core_2.37-1_all.deb
+Size: 1040712
+MD5sum: be036b423d84ce26700dacdbdcddf7b5
+SHA1: 15970026c98abf7a150d20697aa16d10d72740ba
+SHA256: f2b3f7f51e23e0493e8e642c82003fe75cf42bc95fda545cc96b725a69adb515
+Section: fonts
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://dejavu-fonts.org/
+Description: Vera font family derivate with additional characters
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package only contains the sans, sans-bold, serif, serif-bold,
+ mono and mono-bold variants. For additional variants, see the
+ ttf-dejavu-extra package.
+ .
+ DejaVu fonts are intended for use on low-resolution devices (mainly
+ computer screens) but can be used in printing as well.
+Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+
+Package: imagemagick-6-common
+Source: imagemagick
+Version: 8:6.9.10.23+dfsg-2.1ubuntu11.11
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 482
+Breaks: imagemagick-common (<< 8:6.9.2.10+dfsg-1~), libmagickcore-6.q16-2 (<< 8:6.9.6.2+dfsg-3~), libmagickcore-6.q16-3 (<< 8:6.9.6.8+dfsg-1~), libmagickcore-6.q16-4 (<< 8:6.9.8.9+dfsg-1~), libmagickcore-6.q16hdri-4 (<< 8:6.9.8.9+dfsg-1~)
+Replaces: imagemagick-common (<< 8:6.9.2.10+dfsg-1~), libmagickcore-6.q16 (<< 8:6.9.6.2+dfsg-3~)
+Provides: imagemagick-common
+Filename: repo/pool/main/imagemagick-6-common_8%3a6.9.10.23+dfsg-2.1ubuntu11.11_all.deb
+Size: 62220
+MD5sum: 0c96399d3846c1019bf5f41b71167585
+SHA1: be727252981e1f42c39f6e005c872643929a366b
+SHA256: b789bf95bc719f41ae661b3a2f7f29e0313849dd306a3b05f276a889bf08bf9e
+Section: graphics
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.imagemagick.org/
+Description: image manipulation programs -- infrastructure
+ imagemagick-common contains the filesystem infrastructure required for
+ further installation of imagemagick in any configuration; it does not provide
+ a full installation of binaries, libraries, and utilities
+ required to run imagemagick.
+ .
+ This package is independent of channel depth.
+Original-Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+
+Package: libapache2-mod-php7.2
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 4789
+Depends: libmagic1, libpcre3 (>= 2:8.35), mime-support, php7.2-cli, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), php7.2-json, php7.2-opcache, tzdata, ucf, apache2-api-20120211, apache2-bin (>= 2.4.16), libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Recommends: apache2
+Suggests: php-pear
+Provides: libapache2-mod-php, phpapi-20170718
+Filename: repo/pool/main/libapache2-mod-php7.2_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 1388008
+MD5sum: f57848bf6ffeab2ab6cb2ed486f73397
+SHA1: b1933ec881708dc0cdf4dcfe29210d090f53821d
+SHA256: 7b604255addb428db21309cf0f857895b9608255f09dfeda03420b231d5b981b
+Section: httpd
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (Apache 2 module)
+ This package provides the PHP module for the Apache 2 webserver (as
+ found in the apache2-mpm-prefork package).  Please note that this package
+ ONLY works with Apache's prefork MPM, as it is not compiled thread-safe.
+ .
+ The following extensions are built in: Core date filter hash libxml openssl
+ pcre Reflection session sodium SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:57 +0000 by dpkg-repack.)
+
+Package: libapr1
+Source: apr
+Version: 1.6.5-1ubuntu1.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 272
+Depends: libc6 (>= 2.15), libuuid1 (>= 2.16)
+Conflicts: libapr1.0
+Filename: repo/pool/main/libapr1_1.6.5-1ubuntu1.1_amd64.deb
+Size: 91460
+MD5sum: 28462bcdd1d90305b37042520455ca2c
+SHA1: 157df529b175ac247fb691690bb01fb7f70ff377
+SHA256: be7ddfc8d7bb509f290672b2ba323650cbfa3adad84358d0eadc90fafb7c36c0
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Description: Apache Portable Runtime Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: libaprutil1
+Source: apr-util
+Version: 1.6.1-4ubuntu2.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 282
+Depends: libapr1 (>= 1.6.2), libc6 (>= 2.25), libcrypt1 (>= 1:4.1.0), libdb5.3, libexpat1 (>= 2.0.1), libgdbm6 (>= 1.16), libssl1.1 (>= 1.1.0)
+Breaks: libapr1 (<< 1.4.8-2~)
+Filename: repo/pool/main/libaprutil1_1.6.1-4ubuntu2.2_amd64.deb
+Size: 85136
+MD5sum: ac586d99bde348bdd516b275e026785d
+SHA1: e6d190dd8178caffd2d213a4e9fe23102611358e
+SHA256: 2dc8b2b0205afe95cf1dd6e90cb8d5b36f7741525fb14938b6b09113d5281ccb
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Description: Apache Portable Runtime Utility Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: libaprutil1-dbd-sqlite3
+Source: apr-util
+Version: 1.6.1-4ubuntu2.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 51
+Depends: libaprutil1 (= 1.6.1-4ubuntu2.2), libc6 (>= 2.4), libsqlite3-0 (>= 3.5.9)
+Filename: repo/pool/main/libaprutil1-dbd-sqlite3_1.6.1-4ubuntu2.2_amd64.deb
+Size: 10544
+MD5sum: 4010c28baa0ed79c0932d7247fb050f7
+SHA1: 7eefe5b40e77ef0d80d3fb9df03574a464a4489d
+SHA256: 1e843612043bdf6c87345c88090b42bf277c0f317367595b4c81a1daf4cd617f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Description: Apache Portable Runtime Utility Library - SQLite3 Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the SQLite3 database driver.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: libaprutil1-ldap
+Source: apr-util
+Version: 1.6.1-4ubuntu2.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 43
+Depends: libaprutil1 (= 1.6.1-4ubuntu2.2), libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7)
+Filename: repo/pool/main/libaprutil1-ldap_1.6.1-4ubuntu2.2_amd64.deb
+Size: 8752
+MD5sum: 6bb8d530418ad0d0eccc75e08e78b33b
+SHA1: edafdb99edc0805dfa83b8cf9dc8b919ca7532ad
+SHA256: 8c4cb9e11ee7022bcb4bf4cba2551e1ceecf53cefd269e1a6b40e34740ce841a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://apr.apache.org/
+Description: Apache Portable Runtime Utility Library - LDAP Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the LDAP driver.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: libfftw3-double3
+Source: fftw3
+Version: 3.3.8-2ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2170
+Depends: libc6 (>= 2.29), libgomp1 (>= 4.9)
+Suggests: libfftw3-bin, libfftw3-dev
+Breaks: libfftw3-3 (<< 3.3.3-1)
+Replaces: libfftw3-3 (<< 3.3.3-1)
+Filename: repo/pool/main/libfftw3-double3_3.3.8-2ubuntu1_amd64.deb
+Size: 727520
+MD5sum: 633dbe23d058972528decc3d7b8bc850
+SHA1: e43bcf33b9eb182127c16379bc049767b899edce
+SHA256: c448a27c04c925797c8493afa427404fd77ecdb224e8ebfabfefe037d14aede9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://fftw.org
+Description: Library for computing Fast Fourier Transforms - Double precision
+ The FFTW library computes Fast Fourier Transforms (FFT) in one or more
+ dimensions. It is extremely fast. This package contains the shared library
+ for double precision transforms.
+ .
+ To get the static library and the header files, you need to install
+ libfftw3-dev. For documentation, see libfftw3-doc.
+Original-Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: libfontconfig1
+Source: fontconfig
+Version: 2.13.1-2ubuntu3
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 318
+Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.9.1), libuuid1 (>= 2.16), fontconfig-config (>= 2.13.1-2ubuntu3)
+Breaks: xpdf (<= 3.03-11)
+Provides: libfontconfig
+Filename: repo/pool/main/libfontconfig1_2.13.1-2ubuntu3_amd64.deb
+Size: 114072
+MD5sum: dc32339c065e21db35f590d15a560088
+SHA1: 03ea48c6d8ea44c3e15a8a017e76f70c23d9fc28
+SHA256: 7ca5523936a9b8e42f60c0f01c232145809387e5680b05c7bce0bea31844a522
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
+Original-Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+
+Package: libgd3
+Source: libgd2
+Version: 2.2.5-5.2ubuntu2.4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 453
+Depends: libc6 (>= 2.29), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng16-16 (>= 1.6.2-1), libtiff5 (>= 4.0.3), libwebp6 (>= 0.5.1), libxpm4, zlib1g (>= 1:1.1.4)
+Suggests: libgd-tools
+Filename: repo/pool/main/libgd3_2.2.5-5.2ubuntu2.4_amd64.deb
+Size: 118120
+MD5sum: 0682ece28c0695ae2d3f0ca6425512fd
+SHA1: 82b871161ba8812a39b612899d58cc62283d4ca2
+SHA256: 81e93a1919ea68c8dca1bc0ac372571ab9908cb175d64e13bddfe63cbd3b8ed7
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.libgd.org/
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library.
+Original-Maintainer: GD Team <team+gd@tracker.debian.org>
+
+Package: libgomp1
+Source: gcc-10
+Version: 10.5.0-1ubuntu1~20.04
+Architecture: amd64
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 286
+Depends: gcc-10-base (= 10.5.0-1ubuntu1~20.04), libc6 (>= 2.17)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: repo/pool/main/libgomp1_10.5.0-1ubuntu1~20.04_amd64.deb
+Size: 101900
+MD5sum: 27978448f7f62f893d09a981fea33778
+SHA1: 78c2d2a308c03351c973996c8365032ec571d072
+SHA256: 1748606410f62d406588ff7c84ec6e0664cca48d7ecac0b539fecd51ac2219bd
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libjansson4
+Source: jansson
+Version: 2.12-1build1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 79
+Depends: libc6 (>= 2.14)
+Filename: repo/pool/main/libjansson4_2.12-1build1_amd64.deb
+Size: 28944
+MD5sum: c20732beab6c697eced4c292efd80448
+SHA1: 8ec76bb533b5f90b426e09a91dae0c56fda73a2c
+SHA256: e00a073034c202face868928bb4fca7ec7fe417e1d463da6c8e2cec4c39ac641
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.digip.org/jansson/
+Description: C library for encoding, decoding and manipulating JSON data
+ Jansson is a C library for encoding, decoding and manipulating JSON data.
+ .
+ It features:
+  * Simple and intuitive API and data model
+  * Comprehensive documentation
+  * No dependencies on other libraries
+  * Full Unicode support (UTF-8)
+  * Extensive test suite
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: libjbig0
+Source: jbigkit
+Version: 2.1-3.1ubuntu0.20.04.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 82
+Depends: libc6 (>= 2.4)
+Filename: repo/pool/main/libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb
+Size: 27272
+MD5sum: eba1918d81824f4a0c3d04214e77f2a1
+SHA1: b425fb55ec6dabd11a022dfae7f8295633a8f014
+SHA256: 315e24e719f213222db49a6f4edd41f432c36fea333e399d3c4dede17f5f51a6
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+Description: JBIGkit libraries
+ JBIG-KIT provides a portable library of compression and decompression functions
+ with a documented interface that you can include very easily into your image or
+ document processing software.
+ .
+ This package contains the dynamically linked library.
+Original-Maintainer: Michael van der Kolff <mvanderkolff@gmail.com>
+
+Package: libjpeg-turbo8
+Source: libjpeg-turbo
+Version: 2.0.3-0ubuntu1.20.04.3
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 559
+Depends: libc6 (>= 2.14)
+Breaks: libjpeg8 (<< 8c-2ubuntu5)
+Replaces: libjpeg8 (<< 8c-2ubuntu5)
+Filename: repo/pool/main/libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb
+Size: 118048
+MD5sum: 6149b13602ab58bc64a199f1b3d26afc
+SHA1: af012371992346f64b49da86eb3a0965cd29a95b
+SHA256: aeec9c8d11d026533760b93b422077eb0df3818249a6ef4fd21be87770b06d2a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://libjpeg-turbo.virtualgl.org/
+Description: IJG JPEG compliant runtime library.
+ Runtime library supporting the Independent JPEG Group's standard
+ for JPEG files.
+ .
+ This package contains the shared library which is a drop in
+ replacement for libjpeg8, which has better performance than
+ standard libjpeg by use of SIMD and other optimizations.
+
+Package: libjpeg8
+Source: libjpeg8-empty
+Version: 8c-2ubuntu8
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 26
+Depends: libjpeg-turbo8 (>= 1.1.90+svn722-1ubuntu6)
+Filename: repo/pool/main/libjpeg8_8c-2ubuntu8_amd64.deb
+Size: 2194
+MD5sum: e0f16286dd787b951ffa953987fdf6a7
+SHA1: 50f0a11ba80717e17b8485567ee1be76b744ce8f
+SHA256: baaecbc8e7ef55fc1887365721a7771f7d533fabca38fca878668b9c8f7ee13f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Independent JPEG Group's JPEG runtime library (dependency package)
+ libjpeg8 dependency package, depending on libjpeg-turbo8.
+
+Package: liblcms2-2
+Source: lcms2
+Version: 2.9-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 389
+Depends: libc6 (>= 2.29)
+Suggests: liblcms2-utils
+Filename: repo/pool/main/liblcms2-2_2.9-4_amd64.deb
+Size: 140296
+MD5sum: f6723eba7aaf5caaab96f4683e41e7d8
+SHA1: 43a4aa88eddd3881b759177d798cc04db2355c3e
+SHA256: 1df587b2223d21382fb1c91c05cc5092ae0175d335cc4188fb3c5354ec5e65e6
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.littlecms.com/
+Description: Little CMS 2 color management library
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. LittleCMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+ .
+ This package contains the shared library of liblcms2.
+Original-Maintainer: Thomas Weber <tweber@debian.org>
+
+Package: liblqr-1-0
+Source: liblqr
+Version: 0.4.2-2.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 74
+Depends: libc6 (>= 2.2.5), libglib2.0-0 (>= 2.24.0)
+Filename: repo/pool/main/liblqr-1-0_0.4.2-2.1_amd64.deb
+Size: 27744
+MD5sum: a0595f11490e916ca6175496961356fd
+SHA1: fabd7305ba2414b6785b5b11233d3872f543fc53
+SHA256: 500d005dc62e200f09b3ea860aa1175bd0844222ac686e57c9b2d7f9b19f0030
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://liblqr.wikidot.com/
+Description: converts plain array images into multi-size representation
+ The LiquidRescale (lqr) library provides a C/C++ API for performing
+ non-uniform resizing of images by the seam-carving technique.
+ .
+ The library takes images in plain array format as input and converts
+ them to a multi-size representation.
+ .
+ Following is a list of features:
+ .
+   * Areas in the image can be marked for preservation or discard
+   * Once the image has been fully processed, the scaling can be done
+     in real-time. In fact, the information can be saved and read out
+     later without any further processing
+   * The resizing is done with a single function which automatically
+     performs all the necessary operations; it can also work in
+     successive steps without wasting computational time
+   * Possibility to tune the carving operation by letting the seams be
+     less connected, or more rigid, or both
+   * Can export and import the visibility map (the seams)
+   * Other images can be attached and undergo the same carving process
+     as the parent image
+   * The automatic feature detection algorithm can be tuned by
+     selecting among different energy gradient functions
+   * Reports progress through a customizable interface
+   * A signalling system permits one to cleanly handle errors
+ .
+ The library implements the algorithm described in the paper "Seam
+ Carving for Content-Aware Image Resizing" by Shai Avidan and Ariel
+ Shamir, which can be found at
+ http://www.faculty.idc.ac.il/arik/imret.pdf
+ .
+ This package contains the shared library.
+Original-Maintainer: Bernd Zeimetz <bzed@debian.org>
+
+Package: liblua5.2-0
+Source: lua5.2
+Version: 5.2.4-1.1build3
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 431
+Depends: libc6 (>= 2.29), libstdc++6 (>= 4.1.1)
+Filename: repo/pool/main/liblua5.2-0_5.2.4-1.1build3_amd64.deb
+Size: 105748
+MD5sum: e7cb0927bedae6eb16744e0448e337b2
+SHA1: 3802488649fcbe7136dbcdbc78fb6712f19613ce
+SHA256: 190d0ea83af7f1f3c7174cd7afaad2c5c0e4ff85b35ffcf3627b5b592d0e8c90
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.lua.org
+Description: Shared library for the Lua interpreter version 5.2
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+Original-Maintainer: Enrico Tassi <gareuselesinge@debian.org>
+
+Package: libmagickcore-6.q16-3
+Source: imagemagick
+Version: 8:6.9.7.4+dfsg-16ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6334
+Pre-Depends: dpkg (>= 1.17.6)
+Depends: libbz2-1.0, libc6 (>= 2.14), libfftw3-double3 (>= 3.3.5), libfontconfig1 (>= 2.12), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.3.1), libgomp1 (>= 4.9), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), liblqr-1-0 (>= 0.4.0), libltdl7 (>= 2.4.6), liblzma5 (>= 5.1.1alpha+20120614), libpng16-16 (>= 1.6.2-1), libtiff5 (>= 4.0.3), libx11-6, libxext6, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), imagemagick-6-common (>= 8:6.9.6.2+dfsg-3)
+Recommends: ghostscript, gsfonts
+Suggests: libmagickcore-6.q16-3-extra
+Filename: repo/pool/main/libmagickcore-6.q16-3_8%3a6.9.7.4+dfsg-16ubuntu6_amd64.deb
+Size: 1611928
+MD5sum: f5f9149cc01624bcb86899f9a1994391
+SHA1: 7bd5ed470fcdb3ba6b1c562aebc33d049f4d7a57
+SHA256: 8860c821cbb62bd5a3841565965cff85832cee7a5e421aedfb466dfae44fea8e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.imagemagick.org/
+Description: low-level image manipulation library -- quantum depth Q16
+ The MagickCore API is a low-level interface between the C programming language
+ and the ImageMagick image processing libraries and is recommended for
+ wizard-level programmers only. Unlike the MagickWand C API which uses only a
+ few opaque types and accessors, with MagickCore you almost exclusively access
+ the structure members directly.
+ .
+ This package contains the C libraries needed to run executables that make
+ use of MagickCore.
+ .
+ This version of libmagickcore is compiled for a channel
+ depth of 16 bits (Q16).
+Original-Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+
+Package: libmagickwand-6.q16-3
+Source: imagemagick
+Version: 8:6.9.7.4+dfsg-16ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1270
+Pre-Depends: dpkg (>= 1.17.6)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.3.1), libgomp1 (>= 4.9), libmagickcore-6.q16-3 (>= 8:6.9.6.8), libx11-6, imagemagick-6-common (>= 8:6.9.6.2+dfsg-3)
+Filename: repo/pool/main/libmagickwand-6.q16-3_8%3a6.9.7.4+dfsg-16ubuntu6_amd64.deb
+Size: 293136
+MD5sum: 7fcf28bdffcd57bd4e245914b7728fad
+SHA1: b0d6fa1e3a094121ca29b230931dbccaefa0ba9e
+SHA256: 45020a0aa58c6191c449f4e5016222e2a3baebfb2456875f40cc9f9d58bde0ae
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.imagemagick.org/
+Description: image manipulation library -- quantum depth Q16
+ The MagickWand API is the recommended interface between the C programming
+ language and the ImageMagick image processing libraries. Unlike the
+ MagickCore C API, MagickWand uses only a few opaque types. Accessors are
+ available to set or get important wand properties.
+ .
+ This package contains the C libraries needed to run executables that make
+ use of MagickWand.
+ .
+ This version of libmagickwand is compiled for a channel
+ depth of 16 bits (Q16).
+Original-Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+
+Package: libtiff5
+Source: tiff
+Version: 4.1.0+git191117-2ubuntu0.20.04.14
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 558
+Depends: libc6 (>= 2.29), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20120614), libwebp6 (>= 0.5.1), libzstd1 (>= 1.3.2), zlib1g (>= 1:1.1.4)
+Filename: repo/pool/main/libtiff5_4.1.0+git191117-2ubuntu0.20.04.14_amd64.deb
+Size: 163968
+MD5sum: fc828986aeb42bb9ba03c54724e1b5f8
+SHA1: 1fcdbf6203a2f08bd2b0efe0df170d75d0bcd371
+SHA256: b2042727ad45469ba013ad3537b808c3b0ba1b6e9084edc5ac798c5f128d72c0
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://libtiff.gitlab.io/libtiff/
+Description: Tag Image File Format (TIFF) library
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: libwebp6
+Source: libwebp
+Version: 0.6.1-2ubuntu0.20.04.3
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 431
+Depends: libc6 (>= 2.29)
+Filename: repo/pool/main/libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb
+Size: 185248
+MD5sum: f0baa916d1b2b31bed50f497abc5b888
+SHA1: f52693b7487dd5c2e8f5ef634ed6eec2e6fcd13c
+SHA256: 78bd6a8a1a6cd990024cad5f8ccfc0b7988b0b4bcfe2faa7c4f7ea3c6b44189e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://developers.google.com/speed/webp/
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+Original-Maintainer: Jeff Breidenbach <jab@debian.org>
+
+Package: libxpm4
+Source: libxpm
+Version: 1:3.5.12-1ubuntu0.20.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 98
+Depends: libc6 (>= 2.14), libx11-6
+Filename: repo/pool/main/libxpm4_1%3a3.5.12-1ubuntu0.20.04.2_amd64.deb
+Size: 34924
+MD5sum: a5db12a4df120a248d9bf192726055c9
+SHA1: d3febe624ae94babdb76c9b50b5d5b4474d9d741
+SHA256: 40a6da69e24c21c3c8c325bff730796d49b7475d3ec6a6b6a788baee7ebb70aa
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.x.org
+Description: X11 pixmap library
+ The X PixMap image format is an extension of the monochrome X BitMap
+ format specified in the X protocol, and is commonly used in traditional
+ X applications.
+ .
+ This package provides runtime support for XPM format.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libzip5
+Source: libzip
+Version: 1.5.1-0ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 131
+Depends: libbz2-1.0, libc6 (>= 2.14), libssl1.1 (>= 1.1.0), zlib1g (>= 1:1.1.4)
+Filename: repo/pool/main/libzip5_1.5.1-0ubuntu1_amd64.deb
+Size: 46672
+MD5sum: 2d613737652ca6b90684f065a2151882
+SHA1: 16d0d9ba865f33a55db71b2a2fddbbcdce8ed87f
+SHA256: cfe2a62399352e04289f0608e2e6e105a714005e2466690a854d07e2efb6f905
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.nih.at/libzip/
+Description: library for reading, creating, and modifying zip archives (runtime)
+ libzip is a C library for reading, creating, and modifying zip archives. Files
+ can be added from data buffers, files, or compressed data copied directly from
+ other zip archives. Changes made without closing the archive can be reverted.
+ .
+ This package contains the files necessary for running applications that
+ use the libzip library.
+Original-Maintainer: Stefan Schörghofer <amd1212@4md.gr>
+
+Package: php-common
+Source: php-defaults (75)
+Version: 2:75
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 73
+Depends: psmisc (>= 22.15-1~), sed (>= 4.1.1-1)
+Breaks: php-amqp (<< 1.7.0~alpha2-4~), php-apcu (<< 5.1.3+4.0.10-2~), php-apcu-bc (<< 1.0.3-2~), php-ast (<< 0.1.1-2~), php-geoip (<< 1.1.0-4~), php-gmagick (<< 2.0.1~rc3+1.1.7~rc3-2~), php-igbinary (<< 1.2.1-10-ge0e66b9+1.2.1-2~), php-imagick (<< 3.4.0~rc6-2~), php-memcache (<< 3.0.9~20151130.fdbd46b-2~), php-memcached (<< 2.2.0-95-g6ace07d+2.2.0-2~), php-mongodb (<< 1.1.2-3~), php-msgpack (<< 2.0.0+0.5.7-2~), php-radius (<< 1.4.0~b1-2~), php-redis (<< 2.2.7-355-g799e0bc+2.2.7-4~), php-rrd (<< 2.0.0+1.1.3-4~), php-smbclient (<< 0.8.0~rc1-2~), php-ssh2 (<< 0.12-39-g3dfe336+0.12-2~), php-uploadprogress (<< 1.0.3.1-4-g95d8a0f-2~), php-uuid (<< 1.0.4-2~), php-xdebug (<< 2.4.0~rc4-2~), php-zmq (<< 1.1.3-3~), php5.6-common (<< 5.6.18+dfsg-10~), php5.6-json (<< 1.3.9-2~), php7.0-common (<< 7.0.3-11~)
+Filename: repo/pool/main/php-common_2%3a75_all.deb
+Size: 11948
+MD5sum: c6054836005eb7b0f42436e5799079b4
+SHA1: 9dab8a532eb3e3df42a6395aa67475d760020179
+SHA256: bbac6f060d1de7cc56a0d4c0e37469a7932533d963b459444eb9282493b74b00
+Section: php
+Priority: optional
+Description: Common files for PHP packages
+ This package contains common utilities shared among all packaged PHP
+ versions.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+Original-Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+
+Package: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 87
+Depends: libapache2-mod-php7.2 | php7.2-fpm | php7.2-cgi, php7.2-common
+Provides: php
+Filename: repo/pool/main/php7.2_7.2.24-0ubuntu0.19.04.2_all.deb
+Size: 9260
+MD5sum: 09389e67af5128d69a2c2391e819991c
+SHA1: 973dfae6ccde74d444c778dae7aa25fdcc8e76ad
+SHA256: 67ee415cd5f43adcb54e172f18038ad3ff6eef30bc9c091e9d28d744035ca633
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (metapackage)
+ This package is a metapackage that, when installed, guarantees that you
+ have at least one of the four server-side versions of the PHP interpreter
+ installed. Removing this package won't remove PHP from your system, however
+ it may remove other packages that depend on this one.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:52 +0000 by dpkg-repack.)
+
+Package: php7.2-cli
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 4951
+Depends: libedit2 (>= 2.11-20080614-4), libmagic1, libpcre3 (>= 2:8.35), mime-support, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), php7.2-json, php7.2-opcache, php7.2-readline, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Suggests: php-pear
+Provides: php-cli, phpapi-20170718
+Filename: repo/pool/main/php7.2-cli_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 1445096
+MD5sum: 9380895f20f57c8b65aff95c17dace29
+SHA1: bca04f79f1007a57e0b8e887577c04baf48bcbbd
+SHA256: f66a86b92a3fe9a38ddc54137225e737c8fe8c3460a689ef121350365aa2d191
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: command-line interpreter for the PHP scripting language
+ This package provides the /usr/bin/php7.2 command interpreter, useful for
+ testing PHP scripts from a shell or performing general shell scripting tasks.
+ .
+ The following extensions are built in: Core date filter hash libxml openssl
+ pcntl pcre Reflection session sodium SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:52 +0000 by dpkg-repack.)
+
+Package: php7.2-common
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6553
+Depends: php-common (>= 1:35), ucf, libc6 (>= 2.15), libssl1.1 (>= 1.1.0)
+Breaks: php7.2-sodium
+Provides: php-calendar, php-ctype, php-exif, php-fileinfo, php-ftp, php-iconv, php-pdo, php-phar, php-posix, php-shmop, php-sockets, php-sysvmsg, php-sysvsem, php-sysvshm, php-tokenizer, php7.2-calendar, php7.2-ctype, php7.2-exif, php7.2-fileinfo, php7.2-ftp, php7.2-gettext, php7.2-iconv, php7.2-pdo, php7.2-phar, php7.2-posix, php7.2-shmop, php7.2-sockets, php7.2-sysvmsg, php7.2-sysvsem, php7.2-sysvshm, php7.2-tokenizer
+Filename: repo/pool/main/php7.2-common_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 892208
+MD5sum: 9f86b9b610f8b2de49ef7b94ad3497ba
+SHA1: c95f4a2ba3b52da10a59169fd0a54deb4b40b868
+SHA256: 5066b97d98dfbef09a22f418ec60fe7d3939363f3ec00cf5c59df2873c21aa65
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: documentation, examples and common module for PHP
+ This package provides the documentation, examples and common module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:54 +0000 by dpkg-repack.)
+
+Package: php7.2-curl
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 124
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14), libcurl4 (>= 7.44.0)
+Provides: php-curl
+Filename: repo/pool/main/php7.2-curl_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 29628
+MD5sum: fe3ea855b1f66873c2047b2cf749b187
+SHA1: 7a1566cb0aeaacddb137ebaaa4be5c1be09bf141
+SHA256: bcce2a76cbb1f59188621cfc884f2d58c9ee032bdd0e34b2beb76ea939b4e408
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: CURL module for PHP
+ This package provides the CURL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:55 +0000 by dpkg-repack.)
+
+Package: php7.2-gd
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 135
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.4), libgd3 (>= 2.1.1), libxpm4
+Provides: php-gd
+Filename: repo/pool/main/php7.2-gd_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 27636
+MD5sum: 6935865bfd4205bb5878221ae26a79a7
+SHA1: fc0449595b594dd1f7dfbd8ec8fd0d76ec90444f
+SHA256: 9f1bbf97d2a04a4f8117c30685db3b6674379fbb229ba770f55bc774e6d70c19
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: GD module for PHP
+ This package provides the GD module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:55 +0000 by dpkg-repack.)
+
+Package: php7.2-imagick
+Version: 3.4.3~rc2-2ubuntu4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 466
+Depends: php-common (>= 1:7.0+33~), phpapi-20170718, libc6 (>= 2.14), libmagickcore-6.q16-3 (>= 8:6.9.6.8), libmagickwand-6.q16-3 (>= 8:6.9.6.8)
+Recommends: ghostscript, ttf-dejavu-core
+Provides: php7.2-imagick
+Filename: repo/pool/main/php7.2-imagick_3.4.3~rc2-2ubuntu4_amd64.deb
+Size: 91148
+MD5sum: b73262cad3b2ec433ed5e2088e79406c
+SHA1: b665bddaa216e50aee41ccb0e66714b37f77c410
+SHA256: 61f27d31fd928b9e624f3b0e75ae1b4cf900fbac4ca1f52aacff1b43721ce045
+Section: php
+Priority: optional
+Homepage: http://pecl.php.net/package/imagick
+Description: Provides a wrapper to the ImageMagick library
+ Imagick is a native php extension to create and modify images using the
+ ImageMagick API.
+ This extension requires ImageMagick version 6.2.4+ and PHP 5.1.3+.
+ .
+ IMPORTANT: Version 2.x API is not compatible with earlier versions.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:04:24 +0000 by dpkg-repack.)
+
+Package: php7.2-json
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 76
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14)
+Provides: php-json
+Filename: repo/pool/main/php7.2-json_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 19048
+MD5sum: cf93cba1dd149ba65b2751e8b476ce0a
+SHA1: 47f9ea517c9b33a65cba74470ea0536dbdc77775
+SHA256: c5ce7cf8dc04cc7e8717a49b07ff79d8dd43be286026a382d939dcc4bc594fc0
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: JSON module for PHP
+ This package provides the JSON module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:55 +0000 by dpkg-repack.)
+
+Package: php7.2-mbstring
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1688
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14)
+Provides: php-mbstring
+Filename: repo/pool/main/php7.2-mbstring_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 483668
+MD5sum: f78afcaf9925d9f6d78d9a9bc8054dc1
+SHA1: b7efe9e24a8c758e5f9103ea85e06372132a40b8
+SHA256: bd4b45108f0d7280c5a1cd63a03c461aaf097c8010759bcee3bbf5ea7eef367f
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MBSTRING module for PHP
+ This package provides the MBSTRING module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:55 +0000 by dpkg-repack.)
+
+Package: php7.2-mysql
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 459
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.15)
+Provides: php-mysqli, php-mysqlnd, php-pdo-mysql, php7.2-mysqli, php7.2-mysqlnd, php7.2-pdo-mysql
+Filename: repo/pool/main/php7.2-mysql_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 119696
+MD5sum: 6a4935e9af6b82e194945a24ea045bda
+SHA1: 2be6e83c39734a7c484a380550010c9a970bce92
+SHA256: 15a8bc033657c9690fff76a093e819d04169593b0083d48c90b9ecfccf26f985
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MySQL module for PHP
+ This package provides the MySQL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:56 +0000 by dpkg-repack.)
+
+Package: php7.2-opcache
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 468
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.27)
+Provides: php-opcache
+Filename: repo/pool/main/php7.2-opcache_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 166316
+MD5sum: 568431cf46fc4d6f4462bc74d796dc03
+SHA1: d2ba4205776e8d63ae7635411c406f963bfdedaa
+SHA256: f450e08ee8fa8ffbc2597c3ba3cef7d3e25a1d68689de4a1925cc4357381ef98
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Zend OpCache module for PHP
+ This package provides the Zend OpCache module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:56 +0000 by dpkg-repack.)
+
+Package: php7.2-readline
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 64
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14), libedit2 (>= 3.1-20130611-0)
+Provides: php-readline
+Filename: repo/pool/main/php7.2-readline_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 12300
+MD5sum: 8888e7b79c7a9afb85e87132cd4314c1
+SHA1: 23f387bfc235be3e14d5de00b691f2fa069e8b8e
+SHA256: d276131778e8cd0b046ddbf6be78fa204e337e530247513aba9f47986d529ac4
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: readline module for PHP
+ This package provides the readline module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:56 +0000 by dpkg-repack.)
+
+Package: php7.2-sqlite3
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 121
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14), libsqlite3-0 (>= 3.7.15)
+Provides: php-pdo-sqlite, php-sqlite3, php7.2-pdo-sqlite
+Filename: repo/pool/main/php7.2-sqlite3_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 26468
+MD5sum: c07e89cb73ae1352ce7b00307af33497
+SHA1: e1f411231184e84194cc6304be3474af8ce34a45
+SHA256: 4baa341446b15fc1bff4237503c0c69a06b7002c975273de66c1a1c1311fdba2
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: SQLite3 module for PHP
+ This package provides the SQLite3 module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:56 +0000 by dpkg-repack.)
+
+Package: php7.2-xml
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 489
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
+Breaks: php7.2-xsl (<< 7.0.3-6~)
+Replaces: php7.2-xsl (<< 7.0.3-6~)
+Provides: php-dom, php-simplexml, php-wddx, php-xml, php-xmlreader, php-xmlwriter, php-xsl, php7.2-dom, php7.2-simplexml, php7.2-wddx, php7.2-xmlreader, php7.2-xmlwriter, php7.2-xsl
+Filename: repo/pool/main/php7.2-xml_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 110784
+MD5sum: 9f13ebe67efde8cc8bd490b038148434
+SHA1: 62eda5e69aa1e9cfd5b18190f33218db40db5fec
+SHA256: d761626e45da048637170f55a0914a32a044b052e056824ea6870b5aa7fce644
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: DOM, SimpleXML, WDDX, XML, and XSL module for PHP
+ This package provides the DOM, SimpleXML, WDDX, XML, and XSL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:56 +0000 by dpkg-repack.)
+
+Package: php7.2-zip
+Source: php7.2
+Version: 7.2.24-0ubuntu0.19.04.2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 96
+Depends: php-common (>= 1:35), ucf, php7.2-common (= 7.2.24-0ubuntu0.19.04.2), libc6 (>= 2.27), libzip5 (>= 1.5.0)
+Provides: php-zip
+Filename: repo/pool/main/php7.2-zip_7.2.24-0ubuntu0.19.04.2_amd64.deb
+Size: 21700
+MD5sum: 97bb2c1bd9d6e19ba80478d0c6b50ddc
+SHA1: e41f5303e854035911fc07232efc3ca1e294a29d
+SHA256: 88538e07801e95c5f44cbf1329c03d8050e04467833cde2ba5a4f7564ad8d713
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Zip module for PHP
+ This package provides the Zip module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Thu, 24 Jul 2025 19:10:57 +0000 by dpkg-repack.)
+
