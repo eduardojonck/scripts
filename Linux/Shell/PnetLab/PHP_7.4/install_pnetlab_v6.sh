@@ -63,23 +63,30 @@ log_info "Installing PHP 7.4 for PNETLAB 6"
 add-apt-repository --yes ppa:ondrej/php &>/dev/null
 apt-get update -qq
 apt-get install -y \
-php-common \
 php7.4 \
-php7.4-cli \
+php7.4-yaml \
 php7.4-common \
+php7.4-cli \
 php7.4-curl \
 php7.4-gd \
-php7.4-json \
 php7.4-mbstring \
 php7.4-mysql \
-php7.4-opcache \
-php7.4-readline \
 php7.4-sqlite3 \
-php7.4-imagick \
 php7.4-xml \
 php7.4-zip \
-libapache2-mod-php7.4
-update-alternatives --set php /usr/bin/php7.4
+libapache2-mod-php7.4 \
+php-gd \
+php \
+php-cli \
+php-imagick \
+php-mysql \
+php-sqlite3 \
+php-xml \
+php-curl \
+php-mbstring \
+php-zip \
+php-common \
+update-alternatives --set php /usr/bin/php &>/dev/null
 
 if [ ! -e /opt/ovf/.configured ]; then
     echo "root:pnet" | chpasswd
