@@ -86,7 +86,7 @@ php-curl \
 php-mbstring \
 php-zip \
 php-common
-update-alternatives --set php /usr/bin/php &>/dev/null
+update-alternatives --set php /usr/bin/php7.4 &>/dev/null
 
 if [ ! -e /opt/ovf/.configured ]; then
     echo "root:pnet" | chpasswd
