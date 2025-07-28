@@ -13,7 +13,6 @@ NO_COLOR='\033[0m'
 KERNEL=pnetlab_kernel.zip
 rm /var/lib/dpkg/lock* &>/dev/null
 dpkg --configure -a &>/dev/null
---
 URL_KERNEL=https://labhub.eu.org/api/raw/?path=/upgrades_pnetlab/focal/L/linux-5.17.15-pnetlab-uksm/pnetlab_kernel.zip
 URL_PRE_DOCKER=https://labhub.eu.org/api/raw/?path=/upgrades_pnetlab/focal/D/pre-docker.zip
 URL_PNET_GUACAMOLE=https://labhub.eu.org/api/raw/?path=/upgrades_pnetlab/focal/P/PNET_GUACAMOLE/pnetlab-guacamole_6.0.0-7_amd64.deb
