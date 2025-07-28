@@ -85,7 +85,7 @@ php-xml \
 php-curl \
 php-mbstring \
 php-zip \
-php-common \
+php-common
 update-alternatives --set php /usr/bin/php &>/dev/null
 
 if [ ! -e /opt/ovf/.configured ]; then
