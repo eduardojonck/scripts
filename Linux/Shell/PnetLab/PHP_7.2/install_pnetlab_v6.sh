@@ -33,17 +33,17 @@ for cmd in wget unzip dpkg systemctl systemd-detect-virt lvextend resize2fs; do
 done
 
 KERNEL=pnetlab_kernel.zip
-URL_KERNEL=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/L/linux-5.17.15-pnetlab-uksm/pnetlab_kernel.zip
-URL_PRE_DOCKER=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/D/pre-docker.zip
-URL_PNET_GUACAMOLE=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_GUACAMOLE/pnetlab-guacamole_6.0.0-7_amd64.deb
-URL_PNET_DYNAMIPS=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_DYNAMIPS/pnetlab-dynamips_6.0.0-30_amd64.deb
-URL_PNET_SCHEMA=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_SCHEMA/pnetlab-schema_6.0.0-30_amd64.deb
-URL_PNET_VPC=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_VPC/pnetlab-vpcs_6.0.0-30_amd64.deb
-URL_PNET_QEMU=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_QEMU/pnetlab-qemu_6.0.0-30_amd64.deb
-URL_PNET_DOCKER=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_DOCKER/pnetlab-docker_6.0.0-30_amd64.deb
-URL_PNET_PNETLAB=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_PNETLAB/pnetlab_6.0.0-100_amd64.deb
-URL_PNET_WIRESHARK=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/P/PNET_WIRESHARK/pnetlab-wireshark_6.0.0-30_amd64.deb
-URL_PNET_TPM=https://drive.labhub.eu.org/0:/upgrades_pnetlab/Focal/T/swtpm-focal.zip
+URL_KERNEL=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/L/linux-5.17.15-pnetlab-uksm/pnetlab_kernel.zip
+URL_PRE_DOCKER=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/D/pre-docker.zip
+URL_PNET_GUACAMOLE=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_GUACAMOLE/pnetlab-guacamole_6.0.0-7_amd64.deb
+URL_PNET_DYNAMIPS=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_DYNAMIPS/pnetlab-dynamips_6.0.0-30_amd64.deb
+URL_PNET_SCHEMA=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_SCHEMA/pnetlab-schema_6.0.0-30_amd64.deb
+URL_PNET_VPC=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_VPC/pnetlab-vpcs_6.0.0-30_amd64.deb
+URL_PNET_QEMU=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_QEMU/pnetlab-qemu_6.0.0-30_amd64.deb
+URL_PNET_DOCKER=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_DOCKER/pnetlab-docker_6.0.0-30_amd64.deb
+URL_PNET_PNETLAB=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_PNETLAB/pnetlab_6.0.0-100_amd64.deb
+URL_PNET_WIRESHARK=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/P/PNET_WIRESHARK/pnetlab-wireshark_6.0.0-30_amd64.deb
+URL_PNET_TPM=https://drive.labhub.eu.org/0:/upgrades_pnetlab/focal-legacy/T/swtpm-focal.zip
 
 UBUNTU_VERSION=$(lsb_release -r -s)
 if [[ "$UBUNTU_VERSION" != "20.04" ]]; then
