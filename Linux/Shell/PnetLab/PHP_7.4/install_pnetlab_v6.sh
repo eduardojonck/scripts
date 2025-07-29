@@ -163,7 +163,7 @@ download_and_install "$URL_PNET_QEMU" "pnetlab-qemu.*6.0.0-30"
 
 log_info "Installing main PNETLAB package..."
 wget --content-disposition -q --show-progress "$URL_PNET_PNETLAB" -O /tmp/pnetlab_latest.deb
-dpkg -i --force-depends /tmp/pnetlab_latest.deb
+dpkg -i /tmp/pnetlab_latest.deb
 
 if ! grep -q "pnetlab.example.com pnetlab" /etc/hosts; then
     echo "127.0.2.1 pnetlab.example.com pnetlab" >> /etc/hosts
