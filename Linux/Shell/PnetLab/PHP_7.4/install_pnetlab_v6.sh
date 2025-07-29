@@ -59,6 +59,9 @@ sed -i -e "s/^#*PermitRootLogin .*/PermitRootLogin yes/" /etc/ssh/sshd_config
 sed -i -e "s/^#*DefaultTimeoutStopSec=.*/DefaultTimeoutStopSec=5s/" /etc/systemd/system.conf
 systemctl restart ssh
 
+og_info "Remove old version PHP"
+apt purge php* -y
+
 log_info "Installing PHP 7.4 for PNETLAB 6"
 add-apt-repository --yes ppa:ondrej/php &>/dev/null
 apt-get update -qq
